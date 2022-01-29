@@ -17,9 +17,9 @@ var MBI;
         'Either',
         'Number',
         'Letter',
-        'Number',
-        'Number',
         'Either',
+        'Number',
+        'Letter',
         'Letter',
         'Number',
         'Number'
@@ -39,7 +39,7 @@ var MBI;
     }
     const mbiLetters = [
         'A', /*'B',*/ 'C', 'D', 'E', 'F', 'G', 'H',
-        'M', 'N', /*'O',*/ 'P', 'Q', 'R',
+        'J', 'K', /*'L',*/ 'M', 'N', /*'O',*/ 'P', 'Q', 'R',
         /*'S',*/ 'T', 'U', 'V', 'W', 'X', 'Y',
     ];
     const mbiLettersLookup = {};
@@ -76,8 +76,9 @@ var MBI;
         return mbiLettersLookup[letter] === true;
     }
     function isMbiNumber(number, allowZero) {
-        if (number.length > 1)
+        if (number.length > 1) {
             return false;
+        }
         const n = parseInt(number);
         return !isNaN(n) && (allowZero || n != 0);
     }
