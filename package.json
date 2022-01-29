@@ -4,7 +4,7 @@
   "description": "",
   "repository": {},
   "scripts": {
-    "start": "./server/index.js",
+    "start": "node ./server/index.js",
     "build-tsc": "tsc",
     "build-web": "webpack",
     "build-all": "run-p build-tsc build-web",
