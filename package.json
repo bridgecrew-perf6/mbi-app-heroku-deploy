@@ -2,9 +2,9 @@
   "name": "mbi-app",
   "version": "1.0.0",
   "description": "",
-  "main": "./server/index.js",
   "repository": {},
   "scripts": {
+    "start": "./server/index.js",
     "build-tsc": "tsc",
     "build-web": "webpack",
     "build-all": "run-p build-tsc build-web",
